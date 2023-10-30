@@ -1,6 +1,11 @@
-*, *::after, *::before {
+/* *, *::after, *::before {
   box-sizing: border-box;
-}
+} */
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --hue: 200;
@@ -11,8 +16,8 @@
 
 body {
   margin: 0;
-  background-color: var(--background-color);
-  overflow: hidden;
+  background-color: #e1b382;
+  /* overflow: hidden; */
 }
 
 .paddle {

@@ -2,16 +2,18 @@ const SPEED = 0.02
 
 export default class Paddle {
 	paddleRef:any;
-
+	ctx:any;
 	constructor(paddleRef:any) {
-		this.paddleRef = paddleRef
+		this.paddleRef = paddleRef``
 		this.reset()
+		// this.ctx = this.paddleRef.getContext("2d");
 	}
 
 	get position() {
 		return parseFloat(
 			getComputedStyle(this.paddleRef).getPropertyValue("--position")
 		)
+
 	}
 
 	set position(value:any) {
